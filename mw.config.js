@@ -4,8 +4,8 @@ mw.config = new mw.Map();
 
 mw.config.set( {
 	// Wiki to use
-	wgScriptPath: TitleInputWidgetConfig.wgScriptPath,
-	wgArticlePath: TitleInputWidgetConfig.wgArticlePath,
+	wgScriptPath: ( window.TitleInputWidgetConfig && TitleInputWidgetConfig.wgScriptPath ) || 'https://en.wikipedia.org/w',
+	wgArticlePath: ( window.TitleInputWidgetConfig && TitleInputWidgetConfig.wgArticlePath ) || 'https://en.wikipedia.org/wiki/$1',
 	wgRelevantPageName: '/',
 	wgLegalTitleChars: ' %!"$&\'()*,\-./0-9:;=?@A-Z\\\^_`a-z~+\u0080-\uFFFF',
 	wgNamespaceIds: {
