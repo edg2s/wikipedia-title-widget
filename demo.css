@@ -1,0 +1,16 @@
+body {
+	font-family: sans-serif;
+	font-size: 12.8px;
+}
+
+.mw-widget-titleInputWidget {
+	width: 30em;
+}
+
+.mw-widget-titleOptionWidget .highlight {
+	font-weight: bold;
+}
+
+a.new {
+	color: #ba0000;
+}
