@@ -86,10 +86,8 @@ module.exports = function ( grunt ) {
 					'mw.config.js',
 					core + 'resources/src/mediawiki/api.js',
 
-					core + 'resources/src/jquery/jquery.autoEllipsis.js',
 					core + 'resources/src/jquery/jquery.byteLimit.js',
 					core + 'resources/src/jquery/jquery.byteLength.js',
-					core + 'resources/src/jquery/jquery.highlightText.js',
 
 					core + 'resources/src/mediawiki/mediawiki.Title.js',
 					core + 'resources/src/mediawiki/mediawiki.Title.phpCharToUpper.js',
