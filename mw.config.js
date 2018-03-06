@@ -1,5 +1,7 @@
 window.mwPerformance = { mark: function () {} };
 
+window.require = mw.loader.require;
+
 mw.config = new mw.Map();
 
 mw.config.set( {
