@@ -85,6 +85,7 @@ module.exports = function ( grunt ) {
 
 					'mw.config.js',
 					core + 'resources/src/mediawiki/api.js',
+					core + 'resources/src/mediawiki/ForeignApi.js',
 
 					'loader.intro.mediawiki.String.js',
 					core + 'resources/src/mediawiki/mediawiki.String.js',

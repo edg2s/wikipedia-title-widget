@@ -1,12 +1,12 @@
 /*!
- * OOUI v0.25.2
+ * OOUI v0.26.1
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2018 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2018-02-07T00:27:29Z
+ * Date: 2018-03-23T23:42:37Z
  */
 /**
  * WikimediaUI Base v0.10.0
@@ -53,7 +53,7 @@
 .oo-ui-buttonElement > .oo-ui-buttonElement-button {
   position: relative;
   border-radius: 2px;
-  padding-top: 2.34375em;
+  padding-top: 2.14285714em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -68,14 +68,19 @@
 }
 .oo-ui-buttonElement.oo-ui-labelElement > input.oo-ui-buttonElement-button,
 .oo-ui-buttonElement.oo-ui-labelElement > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
-  line-height: 1.172em;
+  line-height: 1.07142857em;
 }
 .oo-ui-buttonElement.oo-ui-labelElement.oo-ui-indicatorElement > .oo-ui-buttonElement-button {
-  padding-right: 2.5em;
+  padding-right: 2.28571429em;
+}
+.oo-ui-buttonElement.oo-ui-iconElement .oo-ui-iconElement-icon,
+.oo-ui-buttonElement.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .oo-ui-buttonElement.oo-ui-indicatorElement.oo-ui-labelElement > .oo-ui-buttonElement-button > .oo-ui-indicatorElement-indicator,
 .oo-ui-buttonElement.oo-ui-indicatorElement.oo-ui-iconElement > .oo-ui-buttonElement-button > .oo-ui-indicatorElement-indicator {
-  right: 0.9375em;
+  right: 0.85714286em;
 }
 .oo-ui-buttonElement.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
   -webkit-transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
@@ -106,36 +111,36 @@
   opacity: 1;
 }
 .oo-ui-buttonElement-frameless.oo-ui-iconElement:first-child {
-  margin-left: -0.234375em;
+  margin-left: -0.28571429em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button {
-  min-width: 1.875em;
-  min-height: 1.875em;
+  min-width: 1.42857143em;
+  min-height: 1.42857143em;
   border-color: #fff;
   border-color: transparent;
   border-style: solid;
   border-width: 1px;
-  padding-top: 2.34375em;
-  padding-left: 2.34375em;
+  padding-top: 2.14285714em;
+  padding-left: 2.14285714em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {
-  left: 0.234375em;
+  left: 0.28571429em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-labelElement:first-child {
-  margin-left: -0.3125em;
+  margin-left: -0.14285714em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement:first-child {
-  margin-left: -0.234375em;
+  margin-left: -0.28571429em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-labelElement > .oo-ui-buttonElement-button {
   border-color: #fff;
   border-color: transparent;
   border-style: solid;
   border-width: 1px;
-  padding: 0.625em 0.3125em 0.546875em;
+  padding: 0.57142857em 0.14285714em 0.5em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
-  padding-left: 2.34375em;
+  padding-left: 2.14285714em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-indicatorElement > .oo-ui-buttonElement-button {
   min-width: 12px;
@@ -143,15 +148,15 @@
   padding-top: 0;
 }
 .oo-ui-buttonElement-frameless.oo-ui-indicatorElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
-  padding-left: 4.21875em;
-  padding-top: 2.34375em;
+  padding-left: 3.85714286em;
+  padding-top: 2.14285714em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-indicatorElement.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding-left: 0.3125em;
-  padding-top: 0.625em;
+  padding-left: 0.14285714em;
+  padding-top: 0.57142857em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-indicatorElement.oo-ui-iconElement.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding-left: 2.34375em;
+  padding-left: 2.14285714em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
   color: #222;
@@ -229,40 +234,35 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 2px;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
+  padding-left: 0.85714286em;
+  padding-right: 0.85714286em;
 }
 .oo-ui-buttonElement-framed.oo-ui-iconElement > .oo-ui-buttonElement-button {
-  padding-top: 2.34375em;
+  padding-top: 2.14285714em;
   padding-bottom: 0;
-  padding-left: 2.03125em;
+  padding-left: 2.14285714em;
 }
 .oo-ui-buttonElement-framed.oo-ui-iconElement > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {
-  left: 0.546875em;
+  left: 0.78571429em;
 }
 .oo-ui-buttonElement-framed.oo-ui-iconElement.oo-ui-labelElement > .oo-ui-buttonElement-button,
 .oo-ui-buttonElement-framed.oo-ui-iconElement.oo-ui-indicatorElement > .oo-ui-buttonElement-button {
-  padding-left: 2.5em;
-}
-.oo-ui-buttonElement-framed.oo-ui-iconElement.oo-ui-labelElement > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon,
-.oo-ui-buttonElement-framed.oo-ui-iconElement.oo-ui-indicatorElement > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {
-  left: 0.46875em;
+  padding-left: 2.64285714em;
 }
 .oo-ui-buttonElement-framed.oo-ui-indicatorElement > .oo-ui-buttonElement-button {
-  padding-top: 2.34375em;
-  padding-right: 2.03125em;
+  padding-top: 2.14285714em;
+  padding-right: 2.14285714em;
   padding-bottom: 0;
 }
 .oo-ui-buttonElement-framed.oo-ui-indicatorElement > .oo-ui-buttonElement-button > .oo-ui-indicatorElement-indicator {
-  right: 1.015625em;
+  right: 1.07142857em;
 }
-.oo-ui-buttonElement-framed.oo-ui-indicatorElement.oo-ui-labelElement > .oo-ui-buttonElement-button,
-.oo-ui-buttonElement-framed.oo-ui-indicatorElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
-  padding-right: 2.5em;
+.oo-ui-buttonElement-framed.oo-ui-indicatorElement.oo-ui-labelElement > .oo-ui-buttonElement-button {
+  padding-right: 2.28571429em;
 }
 .oo-ui-buttonElement-framed.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding-top: 0.625em;
-  padding-bottom: 0.546875em;
+  padding-top: 0.57142857em;
+  padding-bottom: 0.5em;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-disabled > .oo-ui-buttonElement-button {
   background-color: #c8ccd1;
@@ -408,9 +408,9 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
-  min-width: 24px;
-  width: 1.875em;
-  min-height: 24px;
+  min-width: 20px;
+  width: 1.42857143em;
+  min-height: 20px;
   height: 100%;
 }
 .oo-ui-indicatorElement .oo-ui-indicatorElement-indicator,
@@ -421,7 +421,7 @@
   position: absolute;
   top: 0;
   min-width: 12px;
-  width: 0.9375em;
+  width: 0.85714286em;
   min-height: 12px;
   height: 100%;
 }
@@ -493,7 +493,7 @@
   margin-top: 0;
 }
 .oo-ui-fieldLayout.oo-ui-labelElement > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header {
-  padding-bottom: 0.3125em;
+  padding-bottom: 0.28571429em;
 }
 .oo-ui-fieldLayout.oo-ui-labelElement > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label {
   line-height: 1.4;
@@ -510,12 +510,12 @@
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-left > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label,
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-right > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label {
   display: block;
-  padding-top: 0.3125em;
+  padding-top: 0.28571429em;
 }
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-left > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-help,
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-right > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-help {
   margin-right: 0;
-  margin-left: -1.875em;
+  margin-left: -1.72em;
 }
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-left > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-field,
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-right > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-field {
@@ -531,41 +531,42 @@
   margin-right: 0;
 }
 .oo-ui-fieldLayout .oo-ui-fieldLayout-help .oo-ui-buttonElement-button {
-  padding-top: 1.71875em;
-  padding-left: 1.71875em;
+  padding-top: 1.57142857em;
+  padding-left: 1.57142857em;
 }
 .oo-ui-fieldLayout .oo-ui-fieldLayout-help .oo-ui-buttonElement-button .oo-ui-iconElement-icon {
-  left: 0;
+  left: 0.21428571em;
 }
 .oo-ui-fieldLayout.oo-ui-fieldLayout-align-top .oo-ui-fieldLayout-help,
 .oo-ui-fieldLayout.oo-ui-fieldLayout-align-inline .oo-ui-fieldLayout-help {
-  margin-top: -0.46875em;
-  margin-right: -0.3125em;
+  margin-top: -0.14285714em;
+  margin-right: -0.14285714em;
 }
 .oo-ui-fieldLayout-messages {
   list-style: none none;
-  margin: 0.25em 0 0 0.25em;
-  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 50em;
+  margin: 0;
+  padding: 0.28571429em 0.85714286em;
 }
 .oo-ui-fieldLayout-messages > li {
-  margin: 0;
-  padding: 0;
   display: table;
+  margin: 0.28571429em 0 0;
+  padding: 0;
 }
 .oo-ui-fieldLayout-messages .oo-ui-iconElement.oo-ui-iconElement-icon {
   display: table-cell;
   position: static;
   top: auto;
-  height: 1.875em;
+  height: 1.42857143em;
 }
 .oo-ui-fieldLayout-messages .oo-ui-labelWidget {
   display: table-cell;
-  padding: 0.1em 0 0.1em 0.3125em;
+  padding: 1px 0 1px 0.42857143em;
   line-height: 1.4;
   vertical-align: middle;
-}
-.oo-ui-fieldLayout.oo-ui-fieldLayout-messages.oo-ui-iconElement .oo-ui-iconElement-icon {
-  display: table-cell;
 }
 .oo-ui-fieldLayout-disabled > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label {
   color: #72777d;
@@ -586,7 +587,7 @@
   max-width: 50em;
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-button .oo-ui-buttonElement-frameless {
-  margin-left: 0.3125em;
+  margin-left: 0.14285714em;
 }
 .oo-ui-fieldsetLayout {
   position: relative;
@@ -624,7 +625,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   max-width: 50em;
 }
 .oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-header .oo-ui-iconElement-icon {
-  height: 1.875em;
+  height: 1.42857143em;
 }
 .oo-ui-fieldsetLayout.oo-ui-iconElement > .oo-ui-fieldsetLayout-header .oo-ui-iconElement-icon {
   display: block;
@@ -635,32 +636,28 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-fieldsetLayout.oo-ui-labelElement > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
   display: inline-block;
-  margin-bottom: 0.54347826em;
-  font-size: 1.15em;
+  margin-bottom: 0.5em;
+  font-size: 1.14285714em;
   font-weight: bold;
   line-height: 1.4;
 }
 .oo-ui-fieldsetLayout.oo-ui-iconElement > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
-  padding-left: 1.76630435em;
-  line-height: 1.63043478em;
+  padding-left: 1.625em;
+  line-height: 1.5;
 }
 .oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-help {
   margin-right: 0;
-  margin-top: -0.234375em;
-  margin-right: -0.3125em;
+  margin-right: -0.14285714em;
 }
 .oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-help:last-child {
   margin-right: 0;
 }
 .oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-help:last-child {
-  margin-right: -0.3125em;
+  margin-right: -0.14285714em;
 }
 .oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-help .oo-ui-buttonElement-button {
-  padding-top: 1.71875em;
-  padding-left: 1.71875em;
-}
-.oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-help .oo-ui-buttonElement-button .oo-ui-iconElement-icon {
-  left: 0;
+  padding-top: 1.57142857em;
+  padding-left: 1.57142857em;
 }
 .oo-ui-formLayout + .oo-ui-fieldsetLayout,
 .oo-ui-formLayout + .oo-ui-formLayout {
@@ -754,23 +751,23 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   color: #72777d;
 }
 .oo-ui-decoratedOptionWidget {
-  padding: 0.703125em 0.9375em 0.625em;
+  padding: 0.64285714em 0.85714286em 0.57142857em;
   line-height: 1;
 }
 .oo-ui-decoratedOptionWidget.oo-ui-iconElement {
-  padding-left: 2.96875em;
+  padding-left: 2.64285714em;
 }
 .oo-ui-decoratedOptionWidget.oo-ui-iconElement .oo-ui-iconElement-icon {
-  left: 0.9375em;
+  left: 0.78571429em;
 }
 .oo-ui-decoratedOptionWidget .oo-ui-labelElement-label {
-  line-height: 1.172em;
+  line-height: 1.07142857em;
 }
 .oo-ui-decoratedOptionWidget.oo-ui-indicatorElement {
-  padding-right: 2.5em;
+  padding-right: 2.28571429em;
 }
 .oo-ui-decoratedOptionWidget.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator {
-  right: 0.9375em;
+  right: 0.85714286em;
 }
 .oo-ui-decoratedOptionWidget.oo-ui-widget-disabled .oo-ui-iconElement-icon,
 .oo-ui-decoratedOptionWidget.oo-ui-widget-disabled .oo-ui-indicatorElement-indicator {
@@ -785,7 +782,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-radioOptionWidget {
   display: table;
   width: 100%;
-  padding: 0.3125em 0;
+  padding: 0.28571429em 0;
 }
 .oo-ui-radioOptionWidget .oo-ui-radioInputWidget,
 .oo-ui-radioOptionWidget.oo-ui-labelElement > .oo-ui-labelElement-label {
@@ -799,7 +796,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   white-space: normal;
 }
 .oo-ui-radioOptionWidget.oo-ui-labelElement .oo-ui-labelElement-label {
-  padding-left: 0.46875em;
+  padding-left: 0.42857143em;
 }
 .oo-ui-radioOptionWidget .oo-ui-radioInputWidget {
   margin-right: 0;
@@ -816,7 +813,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   display: inline-block;
   position: static;
   top: auto;
-  height: 1.875em;
+  height: 1.42857143em;
 }
 .oo-ui-iconWidget.oo-ui-widget-disabled {
   opacity: 0.51;
@@ -825,13 +822,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   display: inline-block;
   vertical-align: middle;
   line-height: 2.5;
-  margin: 0.46875em;
+  margin: 0.42857143em;
 }
 .oo-ui-indicatorWidget.oo-ui-indicatorElement.oo-ui-indicatorElement-indicator {
   display: inline-block;
   position: static;
   top: auto;
-  height: 0.9375em;
+  height: 0.85714286em;
 }
 .oo-ui-indicatorWidget.oo-ui-widget-disabled {
   opacity: 0.51;
@@ -1054,8 +1051,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: width 100ms, height 100ms, left 100ms;
 }
 .oo-ui-popupWidget-head > .oo-ui-labelElement-label {
-  margin: 0.703125em 2.5em 0.625em 0.9375em;
-  line-height: 1.172em;
+  margin: 0.64285714em 2.64285714em 0.57142857em 0.85714286em;
+  line-height: 1.07142857em;
 }
 .oo-ui-popupWidget-head > .oo-ui-buttonWidget {
   right: 0;
@@ -1064,13 +1061,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   line-height: 1.4;
 }
 .oo-ui-popupWidget-body-padded {
-  margin: 0.703125em 0.9375em 0.625em;
+  margin: 0.64285714em 0.85714286em 0.57142857em;
 }
 .oo-ui-popupWidget-body-padded > :first-child {
   margin-top: 0;
 }
 .oo-ui-popupWidget-footer {
-  margin: 0.703125em 0.9375em 0.625em;
+  margin: 0.64285714em 0.85714286em 0.57142857em;
 }
 .oo-ui-popupButtonWidget {
   position: relative;
@@ -1093,7 +1090,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-checkboxInputWidget {
   position: relative;
-  line-height: 1.5625em;
+  line-height: 1.42857143em;
   white-space: nowrap;
   display: inline-block;
 }
@@ -1104,8 +1101,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-checkboxInputWidget [type='checkbox'] {
   position: relative;
   max-width: none;
-  width: 1.5625em;
-  height: 1.5625em;
+  width: 1.42857143em;
+  height: 1.42857143em;
   margin: 0;
   opacity: 0;
   z-index: 1;
@@ -1121,15 +1118,15 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
   position: absolute;
   left: 0;
-  width: 1.5625em;
-  height: 1.5625em;
+  width: 1.42857143em;
+  height: 1.42857143em;
   border: 1px solid #72777d;
   border-radius: 2px;
 }
 .oo-ui-checkboxInputWidget [type='checkbox']:checked + span {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAb0lEQVR4Ae3UAQaAQBBG4egic5SAoMN0qs4R6Bzd5IXCAC/LALP8Fuz7gJ3WfStdAw38HzCXAEAAF+85BgCN3wDfHQ74PJ5WEBcgBWIsLkAKpMceF8AjHhdAkMXjAgiCxw0QxOMCCHJKvH/TBgr3AAtn+fzPcT4DAAAAAElFTkSuQmCC");
-  background-image: linear-gradient(transparent, transparent), /* @embed */ url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xNyA3LjVMOS41IDE1IDYgMTEuNSA0LjUgMTNsNSA1TDIwIDcuNWMtLjcwNi0uNzA2LTIuMjk0LS43MDYtMyAweiIvPjwvc3ZnPg==");
-  background-size: 90% 90%;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAATElEQVR4AdXPuw2AMAwG4UjMwzBUniZgdmFMS4dQCpf+S3P1Jz9G69g1ZgS3xsB/w9h4MGEaBxCYsJSZtLiNc9GCJdU+vUBgX3iyRr2hqXBSKZtMvAAAAABJRU5ErkJggg==");
+  background-image: linear-gradient(transparent, transparent), /* @embed */ url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjAgMjAiPjxnIGZpbGw9IiNmZmYiPjx0aXRsZT5jaGVjazwvdGl0bGU+PHBhdGggZD0iTTcgMTQuMTdMMi44MyAxMGwtMS40MSAxLjQxTDcgMTcgMTkgNWwtMS40MS0xLjQyTDcgMTQuMTd6Ii8+PC9nPjwvc3ZnPg==");
+  background-size: 1em;
 }
 .oo-ui-checkboxInputWidget [type='checkbox']:disabled + span {
   background-color: #c8ccd1;
@@ -1175,7 +1172,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-shadow: inset 0 0 0 1px #2a4b8d;
 }
 .oo-ui-checkboxMultiselectInputWidget .oo-ui-fieldLayout {
-  margin-top: 0.3125em;
+  margin-top: 0.28571429em;
 }
 .oo-ui-checkboxMultiselectInputWidget .oo-ui-fieldLayout .oo-ui-fieldLayout-body .oo-ui-labelElement-label {
   line-height: 1.5;
@@ -1218,7 +1215,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
   border: 1px solid #a2a9b1;
   border-radius: 2px;
-  padding: 0.625em 0.9375em 0.546875em;
+  padding: 0.57142857em 0.85714286em 0.5em;
   font-size: inherit;
   font-family: inherit;
   vertical-align: middle;
@@ -1229,14 +1226,14 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-dropdownInputWidget select:not( [no-ie] ) {
   background-position: right 1.75em center;
   width: calc(101%);
-  height: 2.5em;
-  padding: 0 0 0 0.9375em;
+  height: 2.28571429em;
+  padding: 0 0 0 0.85714286em;
 }
 .oo-ui-dropdownInputWidget option {
   font-size: inherit;
   font-family: inherit;
   height: 1.5em;
-  padding: 0.625em 0.9375em;
+  padding: 0.57142857em 0.85714286em;
 }
 .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select {
   background-color: #f8f9fa;
@@ -1266,7 +1263,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-radioInputWidget {
   position: relative;
-  line-height: 1.5625em;
+  line-height: 1.42857143em;
   white-space: nowrap;
   display: inline-block;
 }
@@ -1277,8 +1274,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-radioInputWidget [type='radio'] {
   position: relative;
   max-width: none;
-  width: 1.5625em;
-  height: 1.5625em;
+  width: 1.42857143em;
+  height: 1.42857143em;
   margin: 0;
   opacity: 0;
   z-index: 1;
@@ -1290,8 +1287,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 1.5625em;
-  height: 1.5625em;
+  width: 1.42857143em;
+  height: 1.42857143em;
   border: 1px solid #72777d;
   border-radius: 100%;
 }
@@ -1308,7 +1305,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-radioInputWidget [type='radio']:checked + span,
 .oo-ui-radioInputWidget [type='radio']:checked:hover + span,
 .oo-ui-radioInputWidget [type='radio']:checked:focus:hover + span {
-  border-width: 0.46875em;
+  border-width: 0.42857143em;
 }
 .oo-ui-radioInputWidget [type='radio']:disabled + span {
   background-color: #c8ccd1;
@@ -1350,7 +1347,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-color: #2a4b8d;
 }
 .oo-ui-radioSelectInputWidget .oo-ui-fieldLayout {
-  margin-top: 0.3125em;
+  margin-top: 0.28571429em;
 }
 .oo-ui-radioSelectInputWidget .oo-ui-fieldLayout .oo-ui-fieldLayout-body .oo-ui-labelElement-label {
   line-height: 1.5;
@@ -1438,10 +1435,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   color: #000;
   border: 1px solid #a2a9b1;
   border-radius: 2px;
-  padding: 0.625em 0.625em 0.546875em;
+  padding: 0.57142857em 0.57142857em 0.5em;
 }
 .oo-ui-textInputWidget input {
-  line-height: 1.172em;
+  line-height: 1.07142857em;
 }
 .oo-ui-textInputWidget textarea {
   line-height: 1.275;
@@ -1536,36 +1533,36 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-textInputWidget.oo-ui-iconElement input,
 .oo-ui-textInputWidget.oo-ui-iconElement textarea {
-  padding-left: 2.5em;
+  padding-left: 2.64285714em;
 }
 .oo-ui-textInputWidget.oo-ui-iconElement > .oo-ui-iconElement-icon {
-  left: 0.46875em;
+  left: 0.57142857em;
 }
 .oo-ui-textInputWidget.oo-ui-iconElement textarea + .oo-ui-iconElement-icon {
-  max-height: 2.5em;
+  max-height: 2.28571429em;
 }
 .oo-ui-textInputWidget > .oo-ui-labelElement-label {
   color: #72777d;
   margin-top: 1px;
-  padding: 0.625em 0.9375em 0.546875em 0.625em;
-  line-height: 1.172em;
+  padding: 0.57142857em 0.85714286em 0.5em 0.57142857em;
+  line-height: 1.07142857em;
 }
 .oo-ui-textInputWidget.oo-ui-indicatorElement input,
 .oo-ui-textInputWidget.oo-ui-indicatorElement textarea {
-  padding-right: 2.1875em;
+  padding-right: 2em;
 }
 .oo-ui-textInputWidget.oo-ui-indicatorElement.oo-ui-textInputWidget-labelPosition-after > .oo-ui-labelElement-label {
   padding-right: 0;
 }
 .oo-ui-textInputWidget.oo-ui-indicatorElement > .oo-ui-indicatorElement-indicator {
-  max-height: 2.5em;
-  margin-right: 0.9375em;
+  max-height: 2.28571429em;
+  margin-right: 0.85714286em;
 }
 .oo-ui-textInputWidget-labelPosition-after.oo-ui-indicatorElement > .oo-ui-labelElement-label {
-  margin-right: 2.5em;
+  margin-right: 2.28571429em;
 }
 .oo-ui-textInputWidget-labelPosition-before.oo-ui-iconElement > .oo-ui-labelElement-label {
-  padding-left: 2.5em;
+  padding-left: 2.64285714em;
 }
 .oo-ui-menuSelectWidget {
   position: absolute;
@@ -1604,20 +1601,20 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-menuSectionOptionWidget {
   color: #72777d;
-  padding: 0.703125em 0.9375em 0.3125em;
+  padding: 0.64285714em 0.85714286em 0.28571429em;
   font-weight: bold;
 }
 .oo-ui-menuSectionOptionWidget.oo-ui-widget-enabled {
   cursor: default;
 }
 .oo-ui-menuSectionOptionWidget ~ .oo-ui-menuOptionWidget {
-  padding-left: 1.875em;
+  padding-left: 1.71428571em;
 }
 .oo-ui-menuSectionOptionWidget ~ .oo-ui-menuOptionWidget.oo-ui-iconElement {
-  padding-left: 3.90625em;
+  padding-left: 3.5em;
 }
 .oo-ui-menuSectionOptionWidget ~ .oo-ui-menuOptionWidget.oo-ui-iconElement .oo-ui-iconElement-icon {
-  left: 1.875em;
+  left: 1.71428571em;
 }
 .oo-ui-dropdownWidget {
   display: inline-block;
@@ -1650,26 +1647,26 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin-right: 0;
 }
 .oo-ui-dropdownWidget-handle {
-  min-height: 2.5em;
+  min-height: 2.28571429em;
   border: 1px solid #a2a9b1;
   border-radius: 2px;
-  padding: 0.625em 0.9375em 0.546875em;
+  padding: 0.57142857em 0.85714286em 0.5em;
   line-height: 1;
 }
 .oo-ui-dropdownWidget-handle .oo-ui-iconElement-icon {
-  left: 0.46875em;
+  left: 0.85714286em;
 }
 .oo-ui-dropdownWidget-handle .oo-ui-indicatorElement-indicator {
-  right: 0.9375em;
+  right: 0.85714286em;
 }
 .oo-ui-dropdownWidget-handle .oo-ui-labelElement-label {
-  line-height: 1.172em;
+  line-height: 1.07142857em;
 }
 .oo-ui-dropdownWidget.oo-ui-iconElement .oo-ui-dropdownWidget-handle {
-  padding-left: 2.5em;
+  padding-left: 2.64285714em;
 }
 .oo-ui-dropdownWidget.oo-ui-indicatorElement .oo-ui-dropdownWidget-handle {
-  padding-right: 1.875em;
+  padding-right: 1.71428571em;
 }
 .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle {
   background-color: #f8f9fa;
@@ -1764,7 +1761,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   pointer-events: none;
 }
 .oo-ui-comboBoxInputWidget input {
-  height: 2.5em;
+  height: 2.28571429em;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right-width: 0;
@@ -1776,15 +1773,15 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-right-width: 1px;
 }
 .oo-ui-comboBoxInputWidget-dropdownButton.oo-ui-indicatorElement {
-  width: 2.5em;
+  width: 2.64285714em;
 }
 .oo-ui-comboBoxInputWidget-dropdownButton.oo-ui-indicatorElement .oo-ui-buttonElement-button {
-  min-width: 2.5em;
-  min-height: 2.5em;
+  min-width: 37px;
+  min-height: 2.28571429em;
   padding-left: 0;
 }
 .oo-ui-comboBoxInputWidget-dropdownButton.oo-ui-indicatorElement .oo-ui-buttonElement-button > .oo-ui-indicatorElement-indicator {
-  right: 0.703125em;
+  right: 0.85714286em;
 }
 .oo-ui-comboBoxInputWidget-dropdownButton.oo-ui-indicatorElement .oo-ui-buttonElement-button,
 .oo-ui-comboBoxInputWidget-dropdownButton.oo-ui-indicatorElement .oo-ui-buttonElement-button:focus {
@@ -1796,7 +1793,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   position: absolute;
   top: 0;
   height: 100%;
-  right: 0.9375em;
+  right: 0.85714286em;
   margin: 0;
 }
 .oo-ui-comboBoxInputWidget-open .oo-ui-comboBoxInputWidget-dropdownButton > .oo-ui-buttonElement-button {
@@ -1830,7 +1827,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-checkboxMultioptionWidget {
   display: table;
   width: 100%;
-  padding: 0.3125em 0;
+  padding: 0.28571429em 0;
 }
 .oo-ui-checkboxMultioptionWidget .oo-ui-checkboxInputWidget,
 .oo-ui-checkboxMultioptionWidget.oo-ui-labelElement > .oo-ui-labelElement-label {
@@ -1844,7 +1841,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   white-space: normal;
 }
 .oo-ui-checkboxMultioptionWidget.oo-ui-labelElement .oo-ui-labelElement-label {
-  padding-left: 0.46875em;
+  padding-left: 0.42857143em;
 }
 .oo-ui-checkboxMultioptionWidget .oo-ui-checkboxInputWidget {
   margin-right: 0;
@@ -1931,14 +1928,14 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   left: 0;
 }
 /*!
- * OOUI v0.25.2
+ * OOUI v0.26.1
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2018 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2018-02-07T00:27:29Z
+ * Date: 2018-03-23T23:42:37Z
  */
 /**
  * WikimediaUI Base v0.10.0
@@ -2230,12 +2227,12 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: border-color 250ms;
 }
 .oo-ui-toggleSwitchWidget-grip {
-  top: 0.3125em;
+  top: 0.35714286em;
   min-width: 16px;
-  width: 1.25em;
+  width: 1.14285714em;
   min-height: 16px;
-  height: 1.25em;
-  border-radius: 1.25em;
+  height: 1.14285714em;
+  border-radius: 1.14285714em;
   -webkit-transition: background-color 250ms, left 100ms, margin-left 100ms;
   -moz-transition: background-color 250ms, left 100ms, margin-left 100ms;
   transition: background-color 250ms, left 100ms, margin-left 100ms;
@@ -2244,7 +2241,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   display: none;
 }
 .oo-ui-toggleSwitchWidget.oo-ui-toggleWidget-off .oo-ui-toggleSwitchWidget-grip {
-  left: 0.4em;
+  left: 0.35714286em;
   margin-left: 0;
 }
 .oo-ui-toggleSwitchWidget.oo-ui-toggleWidget-on .oo-ui-toggleSwitchWidget-grip {
@@ -2482,26 +2479,26 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-selectFileWidget-info > .oo-ui-iconElement-icon {
   display: none;
   top: -1px;
-  left: 0.46875em;
-  min-height: 2.5em;
+  left: 0.57142857em;
+  min-height: 2.28571429em;
   margin-left: -1px;
 }
 .oo-ui-selectFileWidget-info > .oo-ui-indicatorElement-indicator {
   display: none;
   top: -1px;
-  right: 0.9375em;
-  min-height: 2.5em;
+  right: 0.85714286em;
+  min-height: 2.28571429em;
 }
 .oo-ui-selectFileWidget-label {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  right: 2.375em;
-  padding-top: 0.625em;
-  padding-left: 0.625em;
-  padding-bottom: 0.546875em;
-  line-height: 1.172em;
+  right: 1.92857143em;
+  padding-top: 0.57142857em;
+  padding-left: 0.57142857em;
+  padding-bottom: 0.5em;
+  line-height: 1.07142857em;
   white-space: nowrap;
 }
 .oo-ui-selectFileWidget-fileName {
@@ -2511,26 +2508,26 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-selectFileWidget-clearButton {
   top: -1px;
-  right: 0.46875em;
-  min-width: 24px;
-  width: 1.875em;
+  right: 0.57142857em;
+  min-width: 20px;
+  width: 1.42857143em;
   margin-right: 0;
 }
 .oo-ui-selectFileWidget-clearButton .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {
-  height: 2.5em;
+  height: 2.28571429em;
 }
 .oo-ui-selectFileWidget-empty .oo-ui-selectFileWidget-label {
   color: #72777d;
 }
 .oo-ui-selectFileWidget.oo-ui-iconElement .oo-ui-selectFileWidget-label {
-  left: 2.5em;
+  left: 2.64285714em;
 }
 .oo-ui-selectFileWidget.oo-ui-indicatorElement .oo-ui-selectFileWidget-label {
-  right: 3.75em;
+  right: 3.14285714em;
   padding-left: 0;
 }
 .oo-ui-selectFileWidget.oo-ui-indicatorElement .oo-ui-selectFileWidget-clearButton {
-  right: 2.0875em;
+  right: 2.00714286em;
 }
 .oo-ui-selectFileWidget-empty.oo-ui-indicatorElement .oo-ui-selectFileWidget-label,
 .oo-ui-selectFileWidget-notsupported.oo-ui-indicatorElement .oo-ui-selectFileWidget-label {
@@ -2552,7 +2549,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   white-space: normal;
 }
 .oo-ui-selectFileWidget-dropTarget .oo-ui-selectFileWidget-fileName {
-  padding-right: 2.5em;
+  padding-right: 2.64285714em;
 }
 .oo-ui-selectFileWidget-dropTarget .oo-ui-selectFileWidget-clearButton {
   top: 0;
@@ -2601,7 +2598,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-color: #c8ccd1;
 }
 .oo-ui-selectFileWidget-notsupported.oo-ui-selectFileWidget-dropTarget .oo-ui-selectFileWidget-label {
-  padding: 1em 0.9375em;
+  padding: 1em 0.85714286em;
 }
 .oo-ui-widget-disabled .oo-ui-selectFileWidget-dropLabel {
   display: none;
@@ -2618,7 +2615,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 1.0546875em 0.9375em 0.9375em;
+  padding: 1em 0.85714286em 0.92857143em;
   -webkit-transition: background-color 100ms, color 100ms;
   -moz-transition: background-color 100ms, color 100ms;
   transition: background-color 100ms, color 100ms;
@@ -2640,9 +2637,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-outlineOptionWidget.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator {
   opacity: 0.5;
-}
-.oo-ui-outlineOptionWidget .oo-ui-labelElement-label {
-  font-size: 1.1em;
 }
 .oo-ui-outlineOptionWidget-level-1 {
   padding-left: 2.571em;
@@ -2691,13 +2685,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-outlineControlsWidget-items > .oo-ui-buttonWidget,
 .oo-ui-outlineControlsWidget-movers > .oo-ui-buttonWidget {
-  height: 2.5em;
-  width: 2.5em;
+  height: 2.28571429em;
+  width: 2.28571429em;
   margin: 0 !important;
   /* stylelint-disable-line declaration-no-important */
 }
 .oo-ui-outlineControlsWidget > .oo-ui-iconElement-icon {
-  height: 2.5em;
+  height: 2.28571429em;
   opacity: 0.2;
 }
 .oo-ui-tabSelectWidget {
@@ -2713,13 +2707,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
   vertical-align: bottom;
   color: #222;
-  margin: 0.46875em 0 0 0.46875em;
+  margin: 0.42857143em 0 0 0.42857143em;
   border-color: transparent;
   border-style: solid;
   border-width: 1px 1px 0 1px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  padding: 0.625em 1.015625em 0.546875em;
+  padding: 0.57142857em 0.92857143em 0.5em;
   font-weight: bold;
   line-height: 1;
   -webkit-transition: background-color 100ms, color 100ms;
@@ -2731,7 +2725,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   color: #000;
 }
 .oo-ui-tabOptionWidget .oo-ui-labelElement-label {
-  line-height: 1.172em;
+  line-height: 1.07142857em;
 }
 .oo-ui-tabOptionWidget.oo-ui-widget-enabled:hover {
   background-color: rgba(255, 255, 255, 0.3);
@@ -2786,11 +2780,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 2.5em;
+  min-height: 2.28571429em;
   margin-right: 0.5em;
   border: 1px solid #a2a9b1;
   border-radius: 2px;
-  padding: 0 0.625em 0.3125em;
+  padding: 0 0.57142857em 0.28571429em;
   line-height: 1;
 }
 .oo-ui-tagMultiselectWidget-handle:last-child {
@@ -2799,12 +2793,12 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-tagMultiselectWidget-handle > .oo-ui-tagMultiselectWidget-content > input {
   background-color: transparent;
   color: #000;
-  margin: 0.46875em 0 0 0.390625em;
+  margin: 0.42857143em 0 0 0.35714286em;
   border: 0;
   padding: 0;
   font-family: inherit;
   font-size: inherit;
-  line-height: 1.563em;
+  line-height: 1.42857143em;
   vertical-align: middle;
 }
 .oo-ui-tagMultiselectWidget-handle > .oo-ui-tagMultiselectWidget-content > input::-webkit-input-placeholder {
@@ -2834,14 +2828,14 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin-left: 0;
 }
 .oo-ui-tagMultiselectWidget.oo-ui-iconElement .oo-ui-tagMultiselectWidget-handle {
-  padding-left: 2.475em;
+  padding-left: 2.02857143em;
 }
 .oo-ui-tagMultiselectWidget.oo-ui-iconElement .oo-ui-tagMultiselectWidget-handle > .oo-ui-iconElement-icon {
   left: 0;
   margin: 0 0.3em;
 }
 .oo-ui-tagMultiselectWidget.oo-ui-indicatorElement .oo-ui-tagMultiselectWidget-handle {
-  padding-right: 2.4875em;
+  padding-right: 2.40714286em;
 }
 .oo-ui-tagMultiselectWidget.oo-ui-indicatorElement .oo-ui-tagMultiselectWidget-handle > .oo-ui-indicatorElement-indicator {
   right: 0;
@@ -2896,12 +2890,12 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
   width: auto;
   max-width: 100%;
-  height: 1.71875em;
-  margin: 0.3125em 0.3125em 0 0;
+  height: 1.57142857em;
+  margin: 0.28571429em 0.28571429em 0 0;
   border: 1px solid #a2a9b1;
   border-radius: 2px;
-  padding: 0 0.3125em;
-  line-height: 1.71875em;
+  padding: 0 0.28571429em;
+  line-height: 1.57142857em;
   vertical-align: middle;
 }
 .oo-ui-tagItemWidget.oo-ui-labelElement .oo-ui-labelElement-label {
@@ -2913,7 +2907,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-tagItemWidget.oo-ui-widget-enabled {
   background-color: #f8f9fa;
   color: #222;
-  padding-right: 1.640625em;
+  padding-right: 1.5em;
   -webkit-transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
   -moz-transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
   transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
@@ -2945,17 +2939,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   right: 0;
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button {
-  min-width: 0;
-  min-height: 0;
   border: 0;
-  padding-top: 1.5625em;
-  padding-left: 1.5625em;
+  padding-top: 1.42857143em;
+  padding-left: 1.42857143em;
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-icon-close {
-  left: 0;
-  min-width: 20px;
-  min-height: 20px;
-  width: 1.5625em;
+  min-width: 14px;
+  width: 1em;
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-labelElement-label,
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-indicatorElement-indicator {
@@ -3008,11 +2998,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 2.5em;
+  min-height: 2.28571429em;
   margin-right: 0.5em;
   border: 1px solid #a2a9b1;
   border-radius: 2px;
-  padding: 0 0.625em 0.3125em;
+  padding: 0 0.57142857em 0.28571429em;
   line-height: 1;
 }
 .oo-ui-capsuleMultiselectWidget-handle:last-child {
@@ -3022,11 +3012,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   background-color: transparent;
   color: #000;
   border: 0;
-  margin: 0.46875em 0 0 0.390625em;
+  margin: 0.42857143em 0 0 0.35714286em;
   padding: 0;
   font-family: inherit;
   font-size: inherit;
-  line-height: 1.563em;
+  line-height: 1.42857143em;
   vertical-align: middle;
 }
 .oo-ui-capsuleMultiselectWidget-handle > .oo-ui-capsuleMultiselectWidget-content > input::-webkit-input-placeholder {
@@ -3056,16 +3046,16 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin-left: 0;
 }
 .oo-ui-capsuleMultiselectWidget.oo-ui-iconElement .oo-ui-capsuleMultiselectWidget-handle {
-  padding-left: 2.5em;
+  padding-left: 2.64285714em;
 }
 .oo-ui-capsuleMultiselectWidget.oo-ui-iconElement .oo-ui-capsuleMultiselectWidget-handle > .oo-ui-iconElement-icon {
-  left: 0.46875em;
+  left: 0.57142857em;
 }
 .oo-ui-capsuleMultiselectWidget.oo-ui-indicatorElement .oo-ui-capsuleMultiselectWidget-handle {
-  padding-right: 2.8125em;
+  padding-right: 2.57142857em;
 }
 .oo-ui-capsuleMultiselectWidget.oo-ui-indicatorElement .oo-ui-capsuleMultiselectWidget-handle > .oo-ui-indicatorElement-indicator {
-  right: 0.9375em;
+  right: 0.85714286em;
 }
 .oo-ui-capsuleMultiselectWidget-popup {
   margin-top: -1px;
@@ -3111,12 +3101,12 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
   width: auto;
   max-width: 100%;
-  height: 1.71875em;
-  margin: 0.3125em 0.3125em 0 0;
+  height: 1.57142857em;
+  margin: 0.28571429em 0.28571429em 0 0;
   border: 1px solid #a2a9b1;
   border-radius: 2px;
-  padding: 0 0.3125em;
-  line-height: 1.71875em;
+  padding: 0 0.28571429em;
+  line-height: 1.57142857em;
   vertical-align: middle;
 }
 .oo-ui-capsuleItemWidget.oo-ui-labelElement .oo-ui-labelElement-label {
@@ -3128,7 +3118,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-capsuleItemWidget.oo-ui-widget-enabled {
   background-color: #f8f9fa;
   color: #222;
-  padding-right: 1.640625em;
+  padding-right: 1.5em;
   -webkit-transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
   -moz-transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
   transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
@@ -3150,17 +3140,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   right: 0;
 }
 .oo-ui-capsuleItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button {
-  min-width: 0;
-  min-height: 0;
   border: 0;
-  padding-top: 1.5625em;
-  padding-left: 1.5625em;
+  padding-top: 1.42857143em;
+  padding-left: 1.42857143em;
 }
 .oo-ui-capsuleItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-icon-close {
-  left: 0;
-  min-width: 20px;
-  min-height: 20px;
-  width: 1.5625em;
+  min-width: 14px;
+  width: 1em;
 }
 .oo-ui-capsuleItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-labelElement-label,
 .oo-ui-capsuleItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-indicatorElement-indicator {
@@ -3193,17 +3179,17 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   overflow-y: auto;
 }
 .oo-ui-searchWidget-query {
-  height: 4.375em;
-  padding: 0 1.25em;
+  height: 4em;
+  padding: 0 1.14285714em;
   border-bottom: 1px solid #c8ccd1;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .oo-ui-searchWidget-query .oo-ui-textInputWidget {
-  margin: 0.9375em 0;
+  margin: 0.85714286em 0;
 }
 .oo-ui-searchWidget-results {
-  top: 4.375em;
-  padding: 1.25em;
+  top: 4em;
+  padding: 1.14285714em;
   line-height: 0;
 }
 .oo-ui-numberInputWidget {
@@ -3222,22 +3208,21 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   width: 100%;
 }
 .oo-ui-numberInputWidget-buttoned .oo-ui-buttonWidget {
-  width: 2.5em;
+  width: 2.64285714em;
 }
 .oo-ui-numberInputWidget-buttoned .oo-ui-buttonWidget .oo-ui-buttonElement-button {
   display: block;
-  min-width: 2.5em;
-  min-height: 2.5em;
+  min-width: 37px;
+  min-height: 2.28571429em;
   padding-left: 0;
   padding-right: 0;
 }
 .oo-ui-numberInputWidget-buttoned .oo-ui-buttonWidget .oo-ui-buttonElement-button .oo-ui-iconElement-icon {
-  left: 0.46875em;
-  min-width: 20px;
-  width: 1.5625em;
+  left: 0.57142857em;
 }
 .oo-ui-numberInputWidget-buttoned .oo-ui-inputWidget-input {
   border-radius: 0;
+  max-height: 2.28571429em;
 }
 .oo-ui-numberInputWidget-minusButton > .oo-ui-buttonElement-button {
   border-top-right-radius: 0;
