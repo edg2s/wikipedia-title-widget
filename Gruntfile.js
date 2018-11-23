@@ -25,8 +25,8 @@ module.exports = function ( grunt ) {
 			css: {
 				dest: 'dist/titleInputWidget.css',
 				src: [
-					core + 'resources/lib/oojs-ui/oojs-ui-core-wikimediaui.css',
-					core + 'resources/lib/oojs-ui/oojs-ui-widgets-wikimediaui.css',
+					core + 'resources/lib/ooui/oojs-ui-core-wikimediaui.css',
+					core + 'resources/lib/ooui/oojs-ui-widgets-wikimediaui.css',
 					core + 'resources/src/mediawiki.widgets/mw.widgets.TitleWidget.less'
 				]
 			},
@@ -56,6 +56,8 @@ module.exports = function ( grunt ) {
 					ooui + 'src/mixins/LabelElement.js',
 					ooui + 'src/widgets/TextInputWidget.js',
 
+					ooui + 'src/widgets/IconWidget.js',
+
 					ooui + 'src/mixins/GroupElement.js',
 					ooui + 'src/mixins/GroupWidget.js',
 					ooui + 'src/widgets/SelectWidget.js',
@@ -76,26 +78,27 @@ module.exports = function ( grunt ) {
 					ooui + 'src/widgets/DecoratedOptionWidget.js', // icon+indicator
 					ooui + 'src/widgets/MenuOptionWidget.js',
 
-					core + 'resources/lib/oojs-ui/oojs-ui-wikimediaui.js',
+					core + 'resources/lib/ooui/oojs-ui-wikimediaui.js',
 
 					'mwnow.js',
-					core + 'resources/src/mediawiki/mediawiki.js',
-					core + 'resources/src/mediawiki/mediawiki.util.js',
-					core + 'resources/src/mediawiki/mediawiki.RegExp.js',
+					core + 'resources/src/startup/mediawiki.js',
+					core + 'resources/src/mediawiki.base/mediawiki.base.js',
+					core + 'resources/src/mediawiki.util.js',
+					core + 'resources/src/mediawiki.RegExp.js',
 
 					'mw.config.js',
-					core + 'resources/src/mediawiki/api.js',
-					core + 'resources/src/mediawiki/ForeignApi.js',
+					core + 'resources/src/mediawiki.api/index.js',
+					core + 'resources/src/mediawiki.ForeignApi.core.js',
 
 					'loader.intro.mediawiki.String.js',
-					core + 'resources/src/mediawiki/mediawiki.String.js',
+					core + 'resources/src/mediawiki.String.js',
 					'loader.outro.js',
 
-					core + 'resources/src/mediawiki/mediawiki.Title.js',
-					core + 'resources/src/mediawiki/mediawiki.Title.phpCharToUpper.js',
+					core + 'resources/src/mediawiki.Title/Title.js',
+					core + 'resources/src/mediawiki.Title/phpCharToUpper.js',
 					core + 'resources/src/mediawiki.widgets/mw.widgets.TitleWidget.js',
 					core + 'resources/src/mediawiki.widgets/mw.widgets.TitleOptionWidget.js',
-					core + 'resources/src/mediawiki.widgets/mw.widgets.TitleInputWidget.js',
+					core + 'resources/src/mediawiki.widgets/mw.widgets.TitleInputWidget.js'
 				]
 			}
 		},

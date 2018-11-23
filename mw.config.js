@@ -2,12 +2,17 @@ window.mwPerformance = { mark: function () {} };
 
 window.require = mw.loader.require;
 
+mw.requestIdleCallback = function ( callback ) {
+	callback();
+};
+
 mw.config = new mw.Map();
 
 mw.config.set( {
 	// Wiki to use
 	wgScriptPath: ( window.TitleInputWidgetConfig && TitleInputWidgetConfig.wgScriptPath ) || 'https://en.wikipedia.org/w',
 	wgArticlePath: ( window.TitleInputWidgetConfig && TitleInputWidgetConfig.wgArticlePath ) || 'https://en.wikipedia.org/wiki/$1',
+	wgCaseSensitiveNamespaces: [],
 	wgContentLanguage: navigator.language || 'en',
 	wgRelevantPageName: '/',
 	wgLegalTitleChars: ' %!"$&\'()*,\-./0-9:;=?@A-Z\\\^_`a-z~+\u0080-\uFFFF',
