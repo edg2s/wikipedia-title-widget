@@ -1,14 +1,15 @@
-/* eslint-env node */
+/* eslint-env node, es6 */
 
 module.exports = function ( grunt ) {
 	var core = '/var/www/MediaWiki/core/',
 		ooui = '/var/www/oojs/ui/';
 
-	grunt.loadNpmTasks( 'grunt-contrib-less' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
+	grunt.loadNpmTasks( 'grunt-contrib-less' );
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 	grunt.loadNpmTasks( 'grunt-css-url-embed' );
+	grunt.loadNpmTasks( 'grunt-eslint' );
 
 	grunt.initConfig( {
 		clean: {
@@ -102,6 +103,12 @@ module.exports = function ( grunt ) {
 				]
 			}
 		},
+		eslint: {
+			all: [
+				'*.js',
+				'!loader.*'
+			]
+		},
 		less: {
 			options: {
 				paths: [ 'css/' ]
@@ -145,14 +152,19 @@ module.exports = function ( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( 'build', [
+	grunt.registerTask( 'pre-build', [
+		'eslint',
 		'clean:dist',
-		'concat',
-		'uglify',
+		'concat'
+	] );
+	grunt.registerTask( 'post-build', [
 		'less',
 		'cssUrlEmbed',
 		'clean:tmp'
 	] );
+
+	grunt.registerTask( 'build', [ 'pre-build', 'uglify', 'post-build' ] );
+	grunt.registerTask( 'build-dev', [ 'pre-build', 'post-build' ] );
 
 	grunt.registerTask( 'default', 'build' );
 };

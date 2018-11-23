@@ -1265,7 +1265,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-dropdownInputWidget select:not( [no-ie] ) {
   background-position: right 1.75em center;
-  width: calc(101%);
+  width: calc(100% + 1em);
   height: 2.28571429em;
   padding: 0 0 0 0.85714286em;
 }

@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+/* global TitleInputWidgetConfig */
 window.mwPerformance = { mark: function () {} };
 
 window.require = mw.loader.require;
@@ -15,7 +17,7 @@ mw.config.set( {
 	wgCaseSensitiveNamespaces: [],
 	wgContentLanguage: navigator.language || 'en',
 	wgRelevantPageName: '/',
-	wgLegalTitleChars: ' %!"$&\'()*,\-./0-9:;=?@A-Z\\\^_`a-z~+\u0080-\uFFFF',
+	wgLegalTitleChars: ' %!"$&\'()*,-./0-9:;=?@A-Z\\^_`a-z~+\u0080-\uFFFF',
 	wgNamespaceIds: {
 		media: -2,
 		special: -1,
