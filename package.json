@@ -7,12 +7,12 @@
     "prepublish": "grunt build"
   },
   "devDependencies": {
-    "grunt": "1.0.1",
-    "grunt-contrib-clean": "1.0.0",
+    "grunt": "1.0.3",
+    "grunt-contrib-clean": "2.0.0",
     "grunt-contrib-concat": "1.0.1",
     "grunt-contrib-copy": "1.0.0",
-    "grunt-contrib-less": "1.4.0",
-    "grunt-contrib-uglify": "1.0.1",
-    "grunt-css-url-embed": "1.10.0"
+    "grunt-contrib-less": "2.0.0",
+    "grunt-contrib-uglify": "4.0.0",
+    "grunt-css-url-embed": "1.11.1"
   }
 }
