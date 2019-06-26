@@ -84,19 +84,23 @@ module.exports = function ( grunt ) {
 					'mwnow.js',
 					core + 'resources/src/startup/mediawiki.js',
 					core + 'resources/src/mediawiki.base/mediawiki.base.js',
-					core + 'resources/src/mediawiki.util.js',
 					core + 'resources/src/mediawiki.RegExp.js',
 
 					'mw.config.js',
+
+					'loader.mediawiki.util.config.js',
+					core + 'resources/src/mediawiki.util.js',
 					core + 'resources/src/mediawiki.api/index.js',
 					core + 'resources/src/mediawiki.ForeignApi.core.js',
 
 					'loader.intro.mediawiki.String.js',
 					core + 'resources/src/mediawiki.String.js',
-					'loader.outro.js',
+					'loader.outro.mediawiki.String.js',
 
+					'loader.intro.mediawiki.Title.phpCharToUpper.js',
+					core + 'resources/src/mediawiki.Title/phpCharToUpper.json',
+					'loader.outro.mediawiki.Title.phpCharToUpper.js',
 					core + 'resources/src/mediawiki.Title/Title.js',
-					core + 'resources/src/mediawiki.Title/phpCharToUpper.js',
 					core + 'resources/src/mediawiki.widgets/mw.widgets.TitleWidget.js',
 					core + 'resources/src/mediawiki.widgets/mw.widgets.TitleOptionWidget.js',
 					core + 'resources/src/mediawiki.widgets/mw.widgets.TitleInputWidget.js'
