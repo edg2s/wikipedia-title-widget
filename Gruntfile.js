@@ -28,6 +28,7 @@ module.exports = function ( grunt ) {
 				src: [
 					core + 'resources/lib/ooui/oojs-ui-core-wikimediaui.css',
 					core + 'resources/lib/ooui/oojs-ui-widgets-wikimediaui.css',
+					ooui + 'dist/oojs-ui-wikimediaui-icons-content.css',
 					core + 'resources/src/mediawiki.widgets/mw.widgets.TitleWidget.less'
 				]
 			},
@@ -127,17 +128,7 @@ module.exports = function ( grunt ) {
 		cssUrlEmbed: {
 			ooui: {
 				options: {
-					baseDir: '/var/www/MediaWiki/core/resources/lib/oojs-ui',
-					failOnMissingUrl: false
-				},
-				expand: true,
-				cwd: 'dist',
-				src: [ '**/*.css' ],
-				dest: 'dist'
-			},
-			widgets: {
-				options: {
-					baseDir: '/var/www/MediaWiki/core/resources/src/mediawiki.widgets',
+					baseDir: ooui + 'dist/',
 					failOnMissingUrl: false
 				},
 				expand: true,
