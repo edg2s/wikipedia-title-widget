@@ -4,5 +4,5 @@ $( function () {
 		showImages: true,
 		showDescriptions: true
 	} );
-	$( 'body' ).append( widget.$element );
+	$( document.body ).append( widget.$element );
 } );
